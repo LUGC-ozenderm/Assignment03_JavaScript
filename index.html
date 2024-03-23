@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <h1>Bueno Pizza</h1>
+    <form>
+        <label for="customerName">Name:</label><br>
+        <input type="text" id="customerName" required name="name"><br>
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" required name="address"><br>
+        <label for="Dough">Dough:</label>
+        <select id="Dough" name="Dough"></select><br>
+        <label for="Sauce">Sauce:</label>
+        <select id="Sauce" name="Sauce"></select><br>
+        <label for="Cheese1">Cheese:</label>
+        <select id="Cheese" name="Cheese"></select><br>
+        <label for="Size">Size:</label>
+        <select id="Size" name="Size"></select><br>
+        <div id="toppingsDiv" class="checkbox-container"></div>
+        <input type="submit" value="Submit" onclick="pizzaDiscription()">
+    </form>
+    <p id="studentName"></p>
+    <p id="studentNum"></p>
+    <p id="pizzaDiscription"></p>
+    </body>
+</html>
