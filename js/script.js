@@ -5,15 +5,15 @@ const Cheese = ['Cheddar', 'Swiss', 'Mozerella', 'Provolone', 'permesan'];
 const Topping = ['Pepperoni', 'Chicken','Bacon', 'Ham', 'Sausage', 'Beyond Meat', 'Tofu','Mushrooms', 'Onions', 'Peppers', 'Olives', 'Spinach','Pineapple', 'Jalapenos', 'Tomatoes', 'none'];
 const Size = ['Small', 'Medium', 'Large', 'Extra Large'];
 
-
+//Event listener for the form submission and displays the student name and number
 document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault(); //Prevents the form from submitting normally
-    var studentName = 'Oleg Zenderman'; //My name
-    var studentNumber = '200589820'; //My student number
-    document.getElementById('studentNum').textContent = 'Student Number: ' + studentNumber; //Displays my student number
-    document.getElementById('studentName').textContent = 'Student Name: ' + studentName; //Displays my name
-    event.preventDefault(); //Prevent the form from submitting normally
-    createPizza();//Calls the createPizza function
+    event.preventDefault();
+    var studentName = 'Oleg Zenderman';
+    var studentNumber = '200589820';
+    document.getElementById('studentNum').textContent = 'Student Number: ' + studentNumber;
+    document.getElementById('studentName').textContent = 'Student Name: ' + studentName; 
+    event.preventDefault();
+    createPizza();
 });
 
 //adds items to the dropdown lists
